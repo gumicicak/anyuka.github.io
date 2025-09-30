@@ -1,0 +1,26 @@
+.nav-item{
+  margin: 0px;
+  margin-right:5%;
+}
+#logo{
+  width: 7rem;
+}
+.card{
+  width: 20%; 
+  float: inline-start
+}
+.container{
+  margin: 2%;
+
+}
+#oldal{
+  border-left: 1px solid grey;
+}
+#nap{
+  background-color: green;
+  width: 200%;
+  padding: 10%;
+  margin-left: 15%;
+}
+.nav-link{
+  color: white;
