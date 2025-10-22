@@ -1,0 +1,24 @@
+felhasznalok
+  •	nev - string
+  •	🔑email - string
+  •	jelszo – encrypted string
+business people:  coo – lara | cfo – hana | ceo – levi
+  •	nev -string
+  •	position -string
+  •	id -int
+  •	dob -datetime
+cikkek
+  •	🔑id -int
+  •	datum - datetime
+  •	cím -string
+  •	body -string
+  •	iro -int – kulcs a business people-re
+  •	kategoria id – int
+  • nev - string
+  •	🔑id – int
+kategoria
+  •	id
+  •	Nev
+
+
+
