@@ -2,3 +2,206 @@ https://www.canva.com/design/DAGyj5rw9eM/hmfXU99w8BGiwoQtVJy-Sg/edit?utm_content
 
 Adatb:
 https://www.canva.com/design/DAGzN-bDZU8/aUzWk4NmRiT0wpKbDsVBZQ/edit?utm_content=DAGzN-bDZU8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Híroldal</title>
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* CATEGORY MENU */
+    nav {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    nav li:hover {
+      color: var(--accent);
+    }
+
+    /* ARTICLES */
+    .articles {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+    }
+
+    article h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    article .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    article p {
+      color: #374151;
+    }
+
+    /* SIDEBAR */
+    aside {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      height: fit-content;
+    }
+
+    aside h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    aside li:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Modern Hírek
+</header>
+
+<nav>
+  <ul>
+    <li>Széchenyi</li>
+    <li>→ Világ</li>
+    <li>→ Vélemények</li>
+    <li>→ Biznisz</li>
+    <li>→ Szórakozás</li>
+  </ul>
+</nav>
+
+<div class="container">
+  <main class="articles">
+    <article>
+      <h2>Gazdasági változások Európában</h2>
+      <div class="meta">Biznisz • 2026. január 6.</div>
+      <p>
+        Az európai piacok vegyesen reagáltak a legújabb gazdasági adatokra,
+        miközben a befektetők óvatos optimizmussal figyelik az infláció alakulását.
+      </p>
+    </article>
+
+    <article>
+      <h2>Vélemény: Merre tart a digitális újságírás?</h2>
+      <div class="meta">Vélemények • 2026. január 5.</div>
+      <p>
+        A közösségi média és az AI térnyerése alapjaiban változtatja meg,
+        hogyan fogyasztunk híreket és információkat.
+      </p>
+    </article>
+
+    <article>
+      <h2>Új kulturális trendek 2026-ban</h2>
+      <div class="meta">Szórakozás • 2026. január 4.</div>
+      <p>
+        A minimalizmus visszatérése és az élő események újjáéledése
+        meghatározza az idei kulturális irányzatokat.
+      </p>
+    </article>
+  </main>
+
+  <aside>
+    <h3>Legolvasottabb</h3>
+    <ul>
+      <li>Világpolitikai feszültségek fokozódnak</li>
+      <li>Startup boom Magyarországon</li>
+      <li>Az AI hatása a munkaerőpiacra</li>
+      <li>Filmpremierek, amiket érdemes várni</li>
+    </ul>
+  </aside>
+</div>
+
+<footer>
+  © 2026 Modern Hírek
+</footer>
+
+</body>
+</html>
