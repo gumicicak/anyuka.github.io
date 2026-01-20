@@ -4,6 +4,53 @@ COLLATE utf8mb4_hungarian_ci;
 
 USE news_db;
 
+
+Uj:
+
+-- Üzleti személyek tábla
+CREATE TABLE business_people (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(255) NOT NULL,
+    position VARCHAR(100) NOT NULL,
+    dob DATETIME NOT NULL,
+    jelszo VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;
+
+-- Kategória tábla
+CREATE TABLE kategoriak (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(100) NOT NULL
+) ENGINE=InnoDB;
+
+-- Cikkek tábla
+CREATE TABLE cikkek (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    datum DATETIME NOT NULL,
+    cim VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL,
+    iro_id INT NOT NULL,
+    kategoria_id INT NOT NULL,
+    CONSTRAINT fk_cikkek_iro
+        FOREIGN KEY (iro_id)
+        REFERENCES business_people(id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_cikkek_kategoria
+        FOREIGN KEY (kategoria_id)
+        REFERENCES kategoriak(id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+
+
+
+
+
+
+Regi:
+
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nev VARCHAR(100) NOT NULL,
