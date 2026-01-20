@@ -14,13 +14,13 @@ CREATE TABLE business_people (
     position VARCHAR(100) NOT NULL,
     dob DATETIME NOT NULL,
     jelszo VARCHAR(255) NOT NULL
-) ENGINE=InnoDB;
+);
 
 -- Kategória tábla
 CREATE TABLE kategoriak (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nev VARCHAR(100) NOT NULL
-) ENGINE=InnoDB;
+);
 
 -- Cikkek tábla
 CREATE TABLE cikkek (
@@ -40,7 +40,7 @@ CREATE TABLE cikkek (
         REFERENCES kategoriak(id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
-) ENGINE=InnoDB;
+);
 
 
 
