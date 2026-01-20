@@ -7,42 +7,40 @@ USE news_db;
 
 Uj:
 
--- Üzleti személyek tábla
-CREATE TABLE business_people (
+-- Writers table
+CREATE TABLE writers (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nev VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     position VARCHAR(100) NOT NULL,
     dob DATETIME NOT NULL,
-    jelszo VARCHAR(255) NOT NULL
+    password VARCHAR(255) NOT NULL
 );
 
--- Kategória tábla
-CREATE TABLE kategoriak (
+-- Category table
+CREATE TABLE category (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nev VARCHAR(100) NOT NULL
+    name VARCHAR(100) NOT NULL
 );
 
--- Cikkek tábla
-CREATE TABLE cikkek (
+-- Articles table
+CREATE TABLE articles (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    datum DATETIME NOT NULL,
-    cim VARCHAR(255) NOT NULL,
-    body TEXT NOT NULL,
-    iro_id INT NOT NULL,
-    kategoria_id INT NOT NULL,
-    CONSTRAINT fk_cikkek_iro
-        FOREIGN KEY (iro_id)
-        REFERENCES business_people(id)
+    date DATETIME NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    text TEXT NOT NULL,
+    writer_id INT NOT NULL,
+    category_id INT NOT NULL,
+    CONSTRAINT fk_articles_writer
+        FOREIGN KEY (writer_id)
+        REFERENCES writers(id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE,
-    CONSTRAINT fk_cikkek_kategoria
-        FOREIGN KEY (kategoria_id)
-        REFERENCES kategoriak(id)
+    CONSTRAINT fk_articles_category
+        FOREIGN KEY (category_id)
+        REFERENCES category(id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
 );
-
-
 
 
 
