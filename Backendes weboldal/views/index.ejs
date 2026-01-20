@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Hírek</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <main>
+    <% if (categoryName === 'all' && typeof exclusive !== 'undefined') { %>
+      <section class="exclusive-news-section">
+        <div class="exclusive-news" id="exclusiveNews">
+          <a href="/article/<%= exclusive.id %>">
+            <% if (exclusive.imagePath) { %>
+            <img src="<%= exclusive.imagePath %>">
+          <% } %>
+          <h2><%= exclusive.title %></h2>
+            <p><%= exclusive.cleanText.substring(0, 200) %>...</p>
+        </a>
+        </div>
+        <div class="sidebar">
+          <h3>Popular News</h3>
+          <ul>
+            <% popular.forEach(item => { %>
+              <li><a href="/article/<%= item.id %>"><%= item.title %></a></li>
+            <% }) %>
+          </ul>
+        </div>
+      </section>
+      <hr class="divider">
+    <% } %>
+
+    <section class="news-grid <%= categoryName === 'all' ? 'home-grid' : 'category-grid' %>">
+      <% articles.forEach(article => { %>
+        <div class="news-column" onclick="location.href='/article/<%= article.id %>'">
+          <% if (article.imagePath) { %>
+            <img src="<%= article.imagePath %>" alt="<%= article.title %>">
+          <% } %>
+          <div class="text-content">
+            <h3><%= article.title %></h3>
+            <p><%= article.cleanText.substring(0, 100) %>...</p>
+          </div>
+        </div>
+      <% }) %>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Modern Hírek</p>
+  </footer>
+</body>
+</html>
