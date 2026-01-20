@@ -22,10 +22,10 @@ category_id – int
 (FK → kategoriak.id)
 
 
-Kapcsolatok
-üzleti személyek (1) —— (N) cikkek
+Connections
+writers(1) —— (N) articles
 
-kategória (1) —— (N) cikkek
+category (1) —— (N) articles
 
 
 
