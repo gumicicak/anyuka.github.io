@@ -1,0 +1,23 @@
+<header>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <span onclick="location.href='/'" style="cursor:pointer">Modern Hírek</span>
+      
+      <% if (typeof categoryName !== 'undefined' && categoryName !== 'all') { %>
+        <span onclick="location.href='/category/<%= categoryName %>'" style="cursor:pointer">
+          : <%= categoryName %>
+        </span>
+      <% } %>
+    </div>
+    
+    <div class="navbar-right">
+      <ul>
+        <li><a href="/category/Szechenyi">Szechenyi</a></li>
+        <li><a href="/category/World">World</a></li>
+        <li><a href="/category/Opinion">Opinion</a></li>
+        <li><a href="/category/Business">Business</a></li>
+        <li><a href="/category/Entertainment">Entertainment</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
