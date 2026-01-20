@@ -1,3 +1,38 @@
+Új
+
+Üzleti személyek
+🔑 id – int
+nev – string
+position – string 
+dob – datetime
+jelszo – encrypted string
+
+Kategória
+🔑 id – int
+nev – string
+
+Cikkek
+🔑 id – int
+datum – datetime
+cim – string
+body – string
+iro_id – int
+(FK → business_people.id)
+kategoria_id – int
+(FK → kategoriak.id)
+
+
+Kapcsolatok
+üzleti személyek (1) —— (N) cikkek
+
+kategória (1) —— (N) cikkek
+
+
+
+
+
+Régi
+
 felhasznalok
   •	nev - string
   •	🔑email - string
