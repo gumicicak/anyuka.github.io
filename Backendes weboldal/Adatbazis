@@ -1,1 +1,40 @@
+CREATE DATABASE news_db
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_hungarian_ci;
 
+USE news_db;
+
+-- Writers table
+CREATE TABLE writers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    position VARCHAR(100) NOT NULL,
+    dob DATETIME NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+-- Category table
+CREATE TABLE category (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+-- Articles table
+CREATE TABLE articles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATETIME NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    text TEXT NOT NULL,
+    writer_id INT NOT NULL,
+    category_id INT NOT NULL,
+    CONSTRAINT fk_articles_writer
+        FOREIGN KEY (writer_id)
+        REFERENCES writers(id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_articles_category
+        FOREIGN KEY (category_id)
+        REFERENCES category(id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE
+);
