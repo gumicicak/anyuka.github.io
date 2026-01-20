@@ -1,24 +1,24 @@
 Új
 
-Üzleti személyek
+writers
 🔑 id – int
-nev – string
+name – string
 position – string 
 dob – datetime
-jelszo – encrypted string
+password – encrypted string
 
-Kategória
+category
 🔑 id – int
-nev – string
+name – string
 
-Cikkek
+articles
 🔑 id – int
-datum – datetime
-cim – string
-body – string
-iro_id – int
+date – datetime
+title – string
+text – string
+writer_id – int
 (FK → business_people.id)
-kategoria_id – int
+category_id – int
 (FK → kategoriak.id)
 
 
