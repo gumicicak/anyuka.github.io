@@ -1,0 +1,236 @@
+/* ==========================================================================
+   1. VARIABLES & RESET
+   ========================================================================== */
+:root {
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --bg-light: #f5f5f5;
+  --bg-dark: #333333;
+  --text-main: #272727;
+  --text-muted: #555555;
+  --border-light: #dddddd;
+  --accent-blue: #1e3a8a;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   2. GLOBAL LAYOUT
+   ========================================================================== */
+main {
+  flex: 1;
+  margin-top: 70px; /* Aligned with Navbar height */
+  padding-top: 2rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border-light);
+  margin: 2rem 0;
+}
+
+/* ==========================================================================
+   3. NAVIGATION (NAVBAR)
+   ========================================================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+}
+
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar-right li {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+
+.navbar-right li:hover {
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   4. COMPONENTS (CARDS & SECTIONS)
+   ========================================================================== */
+
+/* Exclusive News & Sidebar Layout */
+.exclusive-news-section {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.exclusive-news, .sidebar {
+  background-color: var(--primary-white);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.exclusive-news img{
+  width: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.exclusive-news { flex: 3; }
+.sidebar { flex: 1; }
+
+.sidebar ul { list-style: none; }
+.sidebar li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.sidebar li:hover { color: var(--accent-blue); }
+
+/* News Grid Utility */
+.news-grid {
+  padding: 2rem 4rem;
+  background-color: var(--bg-dark);
+}
+
+.news-column {
+  background-color: var(--primary-white);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+  cursor: pointer;
+}
+
+.news-column:hover {
+  transform: translateY(-5px);
+}
+
+.news-column img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.news-column h3 { margin: 1rem 0; }
+
+/* ==========================================================================
+   5. PAGE SPECIFIC LAYOUTS
+   ========================================================================== */
+
+/* Home Grid (4 Columns) */
+.news-grid.home-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Category Grid (List View) */
+.news-grid.category-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--bg-light);
+}
+
+.category-grid .news-column {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
+}
+
+.category-grid .news-column img {
+  width: 50%;
+  aspect-ratio: 4/1;
+}
+
+.category-grid .text-content { flex: 1; }
+
+/* Full Article View */
+.full-article {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 2.5rem;
+  background-color: var(--primary-white);
+  box-shadow: var(--shadow);
+}
+
+.full-article h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem; }
+.full-article-meta { color: var(--text-muted); margin-bottom: 2rem; font-size: 0.9rem; }
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+.footer {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .news-grid.home-grid { grid-template-columns: repeat(2, 1fr); }
+  .exclusive-news-section { flex-direction: column; }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .navbar { height: auto; padding: 1rem; flex-direction: column; }
+  .navbar-right ul { margin-top: 1rem; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  
+  .news-grid { padding: 1rem; }
+  .news-grid.home-grid { grid-template-columns: 1fr; }
+  
+  .category-grid .news-column { flex-direction: column; }
+  .category-grid .news-column img { width: 100%; }
+  
+  main { margin-top: 130px; } /* More space for stacked navbar */
+}
