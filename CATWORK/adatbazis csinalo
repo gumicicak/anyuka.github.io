@@ -61,7 +61,7 @@ INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
 (
     '2025-03-18 14:32:00',
     'Dramatikus ékszerek felrobbannak :o',
-    'Régen az ékszerek legnagyobb veszélye az volt, hogy leesnek a lefolyóba. Ma viszont már fel is robbanhatnak. Igen, jól olvasod. Az „okos” ékszerek – LED-es gyűrűk, villogó nyakláncok – néha túl komolyan veszik az „energia” szót.
+    '1drameksz.jpg- Régen az ékszerek legnagyobb veszélye az volt, hogy leesnek a lefolyóba. Ma viszont már fel is robbanhatnak. Igen, jól olvasod. Az „okos” ékszerek – LED-es gyűrűk, villogó nyakláncok – néha túl komolyan veszik az „energia” szót.
 A gond általában az apró akkumulátorral van, amit sikerült belezsúfolni egy ékszerbe, ami kb. akkora, mint egy Tic Tac. Ha túlmelegszik, megsérül vagy rossz töltőt kap, akkor jön a meglepetés.
 Szerencsére nem Michael Bay-filmes robbanásokról beszélünk, inkább kisebb pukkanásokról.
 Tanulság: ha az ékszered töltést kér, zümmög, melegszik, és közben világít – az már nem divat, hanem figyelmeztetés.',
@@ -71,7 +71,7 @@ Tanulság: ha az ékszered töltést kér, zümmög, melegszik, és közben vil�
 (
     '2025-06-02 09:11:00',
     'Feszült szituáció…',
-    'Valamiért minden helyzet feszült. Sorban állás? Feszült. Csoportmunka? Feszült. „Ki ette meg az utolsó joghurtot?” – extrán feszült.
+    '2feszult.jpg- Valamiért minden helyzet feszült. Sorban állás? Feszült. Csoportmunka? Feszült. „Ki ette meg az utolsó joghurtot?” – extrán feszült.
 Az ok egyszerű: mindenki fáradt. Kevés az alvás, sok az értesítés, és mindenki siet valahová.
 Nem ellenünk van a világ, csak túl sok tab van nyitva mindenkinek az agyában.',
     1,
@@ -80,7 +80,7 @@ Nem ellenünk van a világ, csak túl sok tab van nyitva mindenkinek az agyában
 (
     '2026-01-27 20:45:00',
     'AI-házasság – mikor az algoritmus mondja, hogy „igen”',
-    'Az emberiség eljutott oda, hogy valaki azt mondta: „Az emberek túl bonyolultak… házasodjunk inkább egy AI-hoz.”
+    '3ai.avif- Az emberiség eljutott oda, hogy valaki azt mondta: „Az emberek túl bonyolultak… házasodjunk inkább egy AI-hoz.”
 Az AI-partner mindig kedves, mindig figyel, és soha nem sértődik meg.
 Egy kapcsolat nem csak kényelmes, hanem néha idegesítő is – és pont ettől igazi.',
     2,
@@ -89,7 +89,7 @@ Egy kapcsolat nem csak kényelmes, hanem néha idegesítő is – és pont ettő
 (
     '2025-11-14 17:03:00',
     'Focista autók… Mikor jönnek?',
-    'Ha egy focista megérkezik edzésre, nem azt kérdezed, hogy melyik poszton játszik, hanem hogy melyik autóval.
+    '4autok.jpg- Ha egy focista megérkezik edzésre, nem azt kérdezed, hogy melyik poszton játszik, hanem hogy melyik autóval.
 Lamborghini, Ferrari, G-Wagon – mintha a parkoló lenne az igazi bajnokság.
 Addig marad a busz, a bicikli és az álmodozás.',
     3,
@@ -98,12 +98,13 @@ Addig marad a busz, a bicikli és az álmodozás.',
 (
     '2026-04-09 12:26:00',
     'Olimpiai feszültség: a Sasok edzője csalással vádolva',
-    'Az olimpiai hangulat eleve feszült, de most a Sasok edzőjét csalással vádolják.
+    '5sasok.jpg- Az olimpiai hangulat eleve feszült, de most a Sasok edzőjét csalással vádolják.
 A közösség kettészakadt, az internet mémeket gyárt, a bizonyítékok pedig még ködösek.
 Az igazság valószínűleg kevésbé drámai, de a reflektorfény most biztosan rajta van.',
     1,
     1
-),
+);
+
 INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
 (
     '2025-04-22 10:18:00',
@@ -141,4 +142,153 @@ A csőd nem robbanás volt, hanem lassú kifulladás. A tanulság egyszerű: nin
     2,
     3
 );
+INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+(
+    '2025-02-11 08:40:00',
+    'Matekóra – szükséges-e?',
+    '10matekora.png- A matekóra az a tantárgy, amit mindenki tanul, de kevesen vallják be, hogy valaha is szerették. A nagy kérdés mégis újra és újra felmerül: tényleg szükség van rá?
+nincs.',
+    2,
+    4
+),
+(
+    '2025-05-29 15:12:00',
+    'Top 10 szleng',
+    '11t10szelng.png- A szleng olyan, mint a divat: gyorsan változik, és mindig ciki egy kicsit. Íme egy nem hivatalos top 10:
+1. Cringe – amikor fáj nézni
+2. Based – ritka, de üt
+3. NPC – amikor valaki csak létezik
+4. Flex – szerénykedve villogás
+5. POV – akkor is, ha nem az
+6. Bro – bárkire, bármikor
+7. Touch grass – finom beszólás
+8. Sus – gyanús, de elegánsan
+9. Main character – néha túl komolyan
+10. Oké, de… – vitaindító klasszikus
+Használni nem kötelező. De érteni? Ajánlott.',
+    1,
+    4
+),
+(
+    '2025-09-17 18:05:00',
+    'Legviccesebb mémek – tudományosan megmagyarázva',
+    '12legvmeme.png- A legjobb mémek általában értelmetlenek. Egy kép, egy rossz betűtípus, és egy mondat, ami sehogy sem passzol. És mégis működik.
+Nevetünk rajtuk, mert felismerjük magunkat bennük. A mém a modern hieroglifa.
+Van az a pont, amikor már annyira rossz, hogy jó. Ez nem hiba. Ez a műfaj lényege.',
+    2,
+    4
+),
+(
+    '2026-01-08 11:33:00',
+    'Ezért szeresd a macsekokat',
+    '13eszermacs.png- A macskák nem próbálnak lenyűgözni. Nem akarnak megfelelni. Egyszerűen csak vannak – és ettől zseniálisak.
+Ők tanítanak meg arra, hogy nem kell mindig produktívnak lenni.
+Ha egyszer befogadnak, onnantól te alkalmazkodsz.',
+    3,
+    4
+),
+(
+    '2026-03-21 19:22:00',
+    'Legjobb gyrosozó – objektív vélemény, teljesen szubjektíven',
+    '14gyros.png- A legjobb gyrosozó mindig az, amelyik nyitva van, amikor éhes vagy.
+Ha túlcsöpög: pluszpont.
+Ha a pultos ismer: nagyon jó jel.
+A legjobb gyros nem fine dining. Hanem életmentés.',
+    3,
+    4
+),
+(
+    '2026-06-18 20:10:00',
+    'BL elfér-e a világunkban?',
+    '15BLelfer.png- Bajnokok Ligája. Hetente többször megáll az élet miatta.
+A BL egyszerre sport, show és üzlet. Néha több a körítés, mint a játék.
+De amikor jön egy nagy meccs, mindenki nézi. Mert ez közös élmény.',
+    3,
+    4
+);
+INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+(
+    '2025-03-05 09:25:00',
+    'Terhes az iskola macskája?',
+    '16terhescica.png- Az iskola életében kevés dolog tud akkora hullámokat verni, mint egy pletyka. És amikor ez a pletyka az iskola macskájáról szól, ráadásul terhességgel kapcsolatban, akkor garantált a figyelem.
+Az elmúlt napokban egyre többen vették észre, hogy a macska „mintha kicsit kerekebb lenne”. A folyosói elemzések beindultak, és mindenki hirtelen állatorvos lett.
+A valóság? Egyelőre semmi sincs megerősítve. A macska nem nyilatkozik, viszont láthatóan élvezi a figyelmet.
+Egy biztos: ritkán látni ennyire békés témát, ami összehozza az iskolát.',
+    2,
+    2
+),
+(
+    '2025-05-16 14:10:00',
+    'Új kabala – mi is ez?',
+    '17ujkabala.png- Megérkezett. Megjelent. Néz ránk. Az új iskolai kabala itt van, és mindenki próbálja feldolgozni.
+Első reakciók vegyesek: „cuki”, „ez most komoly?”, de megszokni idő kell.
+Hogy ikon lesz-e vagy mém, az még kérdés. Addig is: mosolyogjunk rajta, és tegyünk úgy, mintha mindig is itt lett volna.',
+    1,
+    2
+),
+(
+    '2025-10-02 11:47:00',
+    'Nyíltnap – amikor minden szép és mindenki kedves',
+    '18nyiltnap.png- Nyíltnapon az iskola egy alternatív univerzumba kerül. A falak tisztábbak, a tanárok mosolygósabbak, a diákok pedig példamutatóak.
+A leendő diákok nagy szemekkel néznek körbe, a jelenlegiek pedig próbálják eldönteni, mit mondjanak: az igazat vagy a marketing verziót.
+Ritka pillanat, de fontos: ilyenkor mindenki kicsit büszke arra, hogy ide tartozik.',
+    1,
+    2
+),
+(
+    '2026-01-19 07:58:00',
+    'Rendkívüli hóhelyzet',
+    '19rendho.png- Hó esett. Nem kicsit. Azonnal elindult a kérdés: lesz-e suli?
+A közösségi csoportok felrobbantak, mindenki frissítette az értesítéseket.
+A helyzet végül „rendkívüli” lett, de nem feltétlenül úgy, ahogy mindenki remélte. Viszont volt miről beszélni.',
+    3,
+    2
+),
+(
+    '2026-04-27 16:36:00',
+    'LOL (League of Legends) bajnokság – GG vagy EZ?',
+    '20lol.png- Iskolai LOL-bajnokság. Három szó, ami azonnal két táborra osztja a közösséget.
+A meccsek során volt clutch, rage ping és legendás visszatérés.
+A legjobb mégsem a győzelem volt, hanem az, hogy egy csomó ember egyszerre lelkesedett. A bajnokság bebizonyította: az e-sport közösséget épít.',
+    2,
+    2
+);
+INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+(
+    '2025-04-01 17:20:00',
+    'Székesfehérvár szórakozóhelyei',
+    '21szfvar.png- Székesfehérvár nem Budapest, de nem is egy unalmas vasárnap délután. A szórakozóhelyek kínálata olyan, mint egy vegyes tál: van benne minden, csak tudni kell, mikor hova érdemes menni.
+Vannak helyek, ahol a zene hangosabb, mint a gondolataid, és olyanok is, ahol inkább beszélgetni lehet.
+A közönség vegyes, a hangulat általában jó. Ha tudod, mit keresel, megtalálod. Ha nem, akkor is lesz belőle egy történet.',
+    2,
+    5
+),
+(
+    '2025-07-12 14:48:00',
+    'Mit lehet itt csinálni? – kérdezik a fiatalok',
+    '22mitlehet.png- Ez a kérdés szinte kötelezően elhangzik: „jó, de mit lehet itt csinálni?”.
+Van mozi, kávézók, parkok, edzőtermek és események – csak nem mindig akkor, amikor ráérnél.
+A város nem adja tálcán a szórakozást, inkább azt mondja: oldjátok meg. És ez néha működik.',
+    1,
+    5
+),
+(
+    '2026-02-03 18:06:00',
+    'Ők lesznek az élőszereplős Aranyhaj főszereplői… vagy mégsem?',
+    '23arany.png- Az élőszereplős Aranyhaj castingja még nem végleges, de az internet már döntött.
+A rajongók szerint a karizma, az energia és a drámai hajlengés a legfontosabb.
+A viták hevesek, de amikor kijön a film, mindenki megnézi. A haj pedig biztosan főszereplő lesz.',
+    1,
+    5
+),
+(
+    '2026-05-22 20:31:00',
+    'Új Geometry Dash szintek – ujjak felkészülni',
+    '24geometri.png- Megjelentek az új Geometry Dash szintek, és ezzel együtt a kollektív idegösszeomlás is.
+Gyorsabbak, nehezebbek, villogóbbak. Az első próbálkozás reményteljes, a tizediknél már személyes ügy.
+De amikor végre sikerül… azért játszunk újra. GG.',
+    2,
+    5
+);
+
 
