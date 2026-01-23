@@ -57,56 +57,88 @@ INSERT INTO category (id, name) VALUES
 (4, 'Opinion'),
 (5, 'Entertainment');
 
-Regi:
-
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nev VARCHAR(100) NOT NULL,
-    email VARCHAR(150) NOT NULL UNIQUE,
-    jelszo VARCHAR(255) NOT NULL
+INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+(
+    '2025-03-18 14:32:00',
+    'Dramatikus ékszerek felrobbannak :o',
+    'Régen az ékszerek legnagyobb veszélye az volt, hogy leesnek a lefolyóba. Ma viszont már fel is robbanhatnak. Igen, jól olvasod. Az „okos” ékszerek – LED-es gyűrűk, villogó nyakláncok – néha túl komolyan veszik az „energia” szót.
+A gond általában az apró akkumulátorral van, amit sikerült belezsúfolni egy ékszerbe, ami kb. akkora, mint egy Tic Tac. Ha túlmelegszik, megsérül vagy rossz töltőt kap, akkor jön a meglepetés.
+Szerencsére nem Michael Bay-filmes robbanásokról beszélünk, inkább kisebb pukkanásokról.
+Tanulság: ha az ékszered töltést kér, zümmög, melegszik, és közben világít – az már nem divat, hanem figyelmeztetés.',
+    1,
+    1
+),
+(
+    '2025-06-02 09:11:00',
+    'Feszült szituáció…',
+    'Valamiért minden helyzet feszült. Sorban állás? Feszült. Csoportmunka? Feszült. „Ki ette meg az utolsó joghurtot?” – extrán feszült.
+Az ok egyszerű: mindenki fáradt. Kevés az alvás, sok az értesítés, és mindenki siet valahová.
+Nem ellenünk van a világ, csak túl sok tab van nyitva mindenkinek az agyában.',
+    1,
+    1
+),
+(
+    '2026-01-27 20:45:00',
+    'AI-házasság – mikor az algoritmus mondja, hogy „igen”',
+    'Az emberiség eljutott oda, hogy valaki azt mondta: „Az emberek túl bonyolultak… házasodjunk inkább egy AI-hoz.”
+Az AI-partner mindig kedves, mindig figyel, és soha nem sértődik meg.
+Egy kapcsolat nem csak kényelmes, hanem néha idegesítő is – és pont ettől igazi.',
+    2,
+    1
+),
+(
+    '2025-11-14 17:03:00',
+    'Focista autók… Mikor jönnek?',
+    'Ha egy focista megérkezik edzésre, nem azt kérdezed, hogy melyik poszton játszik, hanem hogy melyik autóval.
+Lamborghini, Ferrari, G-Wagon – mintha a parkoló lenne az igazi bajnokság.
+Addig marad a busz, a bicikli és az álmodozás.',
+    3,
+    1
+),
+(
+    '2026-04-09 12:26:00',
+    'Olimpiai feszültség: a Sasok edzője csalással vádolva',
+    'Az olimpiai hangulat eleve feszült, de most a Sasok edzőjét csalással vádolják.
+A közösség kettészakadt, az internet mémeket gyárt, a bizonyítékok pedig még ködösek.
+Az igazság valószínűleg kevésbé drámai, de a reflektorfény most biztosan rajta van.',
+    1,
+    1
+),
+INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+(
+    '2025-04-22 10:18:00',
+    'Clash, mennyire is nemes? – szakértő válaszol',
+    '6clash.jpg- A Clash körül mindig ugyanaz a vita: stratégia vagy időrablás? A „szakértő” szerint mindkettő. Elméletben fejleszti az előretervezést, a reakcióidőt és a csapatmunkát. Gyakorlatban viszont inkább azt, hogyan lehet egy „utolsó támadást” még három utolsó támadássá bővíteni.
+A nemesség ott kezdődik, amikor nem borulsz ki egy elrontott raid után, és ott ér véget, amikor a telefonod töltőn van, te pedig még mindig klánchatelsz.
+A Clash nem rossz, csak veszélyesen hatékony abban, hogy elhitesse: most tényleg fontos dolgod van.',
+    1,
+    3
+),
+(
+    '2025-08-07 16:41:00',
+    'Vérdíj az alfa CEO fején',
+    '7alfa.jpg- A modern üzleti világban már nem kardok csapnak össze, hanem LinkedIn-üzenetek. Most pedig új szintre lépett a játék: vérdíj került egy „alfa” CEO fejére.
+A cégvezető magabiztos, karizmatikus, és trófeává vált a piacon. Extra fizetés, extra szabadság, extra ego – minden jár.
+Egy ponton túl azonban nem te irányítod a céget, hanem a rólad kialakított mítosz.',
+    3,
+    3
+),
+(
+    '2026-02-15 11:09:00',
+    'Állásinterjú trükkök',
+    '8allasinterju.jpg- Az állásinterjú nem hazugságverseny, inkább kreatív igazságelrendezés.
+„Szeretek csapatban dolgozni” – akkor is, ha legszívesebben egyedül lennél. „Terhelhető vagyok” – amíg van kávé.
+A legnagyobb trükk mégis az, hogy mindkét fél úgy tesz, mintha nem tudná: ez egy próbakör.',
+    3,
+    3
+),
+(
+    '2026-06-03 13:54:00',
+    'Montgomery teljes CSŐD!',
+    '9montgomer.jpg- A Montgomery neve sokáig egyet jelentett a stabilitással. Aztán ment. Egyenesen a csődbe.
+A háttérben túl gyors növekedés, rossz befektetések és az a hit állt, hogy ami eddig működött, az ezután is fog.
+A csőd nem robbanás volt, hanem lassú kifulladás. A tanulság egyszerű: nincs túl nagy cég a bukáshoz.',
+    2,
+    3
 );
 
-CREATE TABLE business_people (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nev VARCHAR(100) NOT NULL,
-    dob DATE,
-    position VARCHAR(100)
-);
-
-CREATE TABLE category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nev VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE articles (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(200) NOT NULL,
-    body TEXT NOT NULL,
-    date DATE NOT NULL,
-    category_id INT,
-    FOREIGN KEY (category_id) REFERENCES category(id)
-        ON DELETE SET NULL
-        ON UPDATE CASCADE
-);
-
-CREATE TABLE views (
-    user_id INT NOT NULL,
-    article_id INT NOT NULL,
-    view_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    PRIMARY KEY (user_id, article_id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
-        ON DELETE CASCADE,
-    FOREIGN KEY (article_id) REFERENCES articles(id)
-        ON DELETE CASCADE
-);
-
-CREATE TABLE write_article (
-    business_people_id INT NOT NULL,
-    article_id INT NOT NULL,
-    PRIMARY KEY (business_people_id, article_id),
-    FOREIGN KEY (business_people_id) REFERENCES business_people(id)
-        ON DELETE CASCADE,
-    FOREIGN KEY (article_id) REFERENCES articles(id)
-        ON DELETE CASCADE
-);
