@@ -45,9 +45,9 @@ CREATE TABLE articles (
 Adatok:
 
 INSERT INTO writers (id, name, position, dob, password) VALUES
-(1, 'Hanna', CFO, '2006-01-14 00:00:00', 'encrypted_pw_1'),
-(2, 'Lara', COO, '2005-11-19 00:00:00', 'encrypted_pw_2'),
-(3, 'Levente', CEO, '2005-11-19 00:00:00', 'encrypted_pw_3')
+(1, 'Hanna', "CFO", '2006-01-14 00:00:00', 'encrypted_pw_1'),
+(2, 'Lara', "COO", '2005-11-19 00:00:00', 'encrypted_pw_2'),
+(3, 'Levente', "CEO", '2005-11-19 00:00:00', 'encrypted_pw_3');
 
 
 INSERT INTO category (id, name) VALUES
