@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Hírek</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left" id="siteTitle" data-category="all">
+        Modern Hírek
+      </div>
+      <div class="navbar-right">
+        <ul>
+          <li data-category="Szechenyi">Szechenyi</li>
+          <li data-category="World">World</li>
+          <li data-category="Opinion">Opinion</li>
+          <li data-category="Business">Business</li>
+          <li data-category="Entertainment">Entertainment</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="full-article" style="background: white; padding: 3rem; border: var(--border); margin-top: 2rem; box-shadow: 15px 15px 0px var(--mustard);">
+      <h1 id="articleTitle" style="font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--tweed); margin-bottom: 1rem;"></h1>
+      
+      <p id="articleMeta" style="text-transform: uppercase; font-weight: bold; letter-spacing: 1px; color: var(--mustard); border-bottom: 1px solid var(--tweed); padding-bottom: 1rem; margin-bottom: 2rem;"></p>
+      
+      <div id="articleContent">
+        <p id="articleText" style="font-size: 1.3rem; line-height: 1.8; color: var(--ink);"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Modern Hírek</p>
+  </footer>
+
+  <script type="module" src="./js/article.js"></script>
+</body>
+</html>
