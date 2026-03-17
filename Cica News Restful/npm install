@@ -1,0 +1,1 @@
+npm install express node body-parser ejs mysql2 express-session multer
