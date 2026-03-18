@@ -8,7 +8,7 @@ USE news_db;
 Uj:
 
 -- Writers table
-CREATE TABLE writers (
+CREATE TABLE irok (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     position VARCHAR(100) NOT NULL,
@@ -17,13 +17,13 @@ CREATE TABLE writers (
 );
 
 -- Category table
-CREATE TABLE category (
+CREATE TABLE kategoriak (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
 
 -- Articles table
-CREATE TABLE articles (
+CREATE TABLE cikkek (
     id INT AUTO_INCREMENT PRIMARY KEY,
     date DATETIME NOT NULL,
     title VARCHAR(255) NOT NULL,
@@ -32,32 +32,32 @@ CREATE TABLE articles (
     category_id INT NOT NULL,
     CONSTRAINT fk_articles_writer
         FOREIGN KEY (writer_id)
-        REFERENCES writers(id)
+        REFERENCES irok(id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE,
     CONSTRAINT fk_articles_category
         FOREIGN KEY (category_id)
-        REFERENCES category(id)
+        REFERENCES kategoriak(id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
 );
 
 Adatok:
 
-INSERT INTO writers (id, name, position, dob, password) VALUES 
+INSERT INTO irok (id, name, position, dob, password) VALUES 
 (1, 'Hanna', 'CFO', '2006-01-14 00:00:00', SHA2('admin', 256)),
 (2, 'Lara', 'COO', '2005-11-19 00:00:00', SHA2('admin', 256)),
 (3, 'Levente', 'CEO', '2005-11-19 00:00:00', SHA2('admin', 256));
 
 
-INSERT INTO category (id, name) VALUES
+INSERT INTO kategoriak (id, name) VALUES
 (1, 'World'),
 (2, 'Szechenyi'),
 (3, 'Business'),
 (4, 'Opinion'),
 (5, 'Entertainment');
 
-INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-03-18 14:32:00',
     'Dramatikus ékszerek felrobbannak :o',
@@ -105,7 +105,7 @@ Az igazság valószínűleg kevésbé drámai, de a reflektorfény most biztosan
     1
 );
 
-INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-04-22 10:18:00',
     'Clash, mennyire is nemes? – szakértő válaszol',
@@ -142,7 +142,7 @@ A csőd nem robbanás volt, hanem lassú kifulladás. A tanulság egyszerű: nin
     2,
     3
 );
-INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-02-11 08:40:00',
     'Matekóra – szükséges-e?',
@@ -206,7 +206,7 @@ De amikor jön egy nagy meccs, mindenki nézi. Mert ez közös élmény.',
     3,
     4
 );
-INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-03-05 09:25:00',
     'Terhes az iskola macskája?',
