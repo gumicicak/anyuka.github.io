@@ -4,9 +4,6 @@ COLLATE utf8mb4_hungarian_ci;
 
 USE news_db;
 
-
-Uj:
-
 -- Writers table
 CREATE TABLE irok (
     id INT AUTO_INCREMENT PRIMARY KEY,
