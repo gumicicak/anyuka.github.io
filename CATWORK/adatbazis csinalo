@@ -54,236 +54,185 @@ INSERT INTO kategoriak (id, name) VALUES
 (4, 'Opinion'),
 (5, 'Entertainment');
 
+-- Világ kategória (category_id: 1)
 INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-03-18 14:32:00',
     'Dramatikus ékszerek felrobbannak :o',
-    '1drameksz.jpg- Régen az ékszerek legnagyobb veszélye az volt, hogy leesnek a lefolyóba. Ma viszont már fel is robbanhatnak. Igen, jól olvasod. Az „okos” ékszerek – LED-es gyűrűk, villogó nyakláncok – néha túl komolyan veszik az „energia” szót.
-A gond általában az apró akkumulátorral van, amit sikerült belezsúfolni egy ékszerbe, ami kb. akkora, mint egy Tic Tac. Ha túlmelegszik, megsérül vagy rossz töltőt kap, akkor jön a meglepetés.
-Szerencsére nem Michael Bay-filmes robbanásokról beszélünk, inkább kisebb pukkanásokról.
-Tanulság: ha az ékszered töltést kér, zümmög, melegszik, és közben világít – az már nem divat, hanem figyelmeztetés.',
+    '<p><b>Dramatikus ékszerek felrobbannak :o</b></p> <p>Régen az ékszerek legnagyobb veszélye az volt, hogy leesnek a lefolyóba. [cite: 178, 209] Ma viszont már fel is robbanhatnak. Igen, jól olvasod. Az „okos” ékszerek – LED-es gyűrűk, villogó nyakláncok – néha túl komolyan veszik az „energia” szót.</p> <p>A gond általában az apró akkumulátorral van, amit sikerült belezsúfolni egy ékszerbe, ami kb. [cite: 178, 210] akkora, mint egy Tic Tac. Ha túlmelegszik, megsérül vagy rossz töltőt kap, akkor jön a meglepetés. [cite: 178, 211] Nem tűzijáték, inkább „mi ez a szag?” pillanat.</p> <p>Szerencsére nem Michael Bay-filmes robbanásokról beszélünk, inkább kisebb pukkanásokról, de mégis: nem minden ékszernek kell okosnak lennie. [cite: 178, 212] Egy nyakláncnak nem dolga értesítést küldeni.</p> <p>Tanulság: ha az ékszered töltést kér, zümmög, melegszik, és közben világít – az már nem divat, hanem figyelmeztetés.</p> [cite: 179, 213]',
     1,
     1
 ),
 (
     '2025-06-02 09:11:00',
     'Feszült szituáció…',
-    '2feszult.jpg- Valamiért minden helyzet feszült. Sorban állás? Feszült. Csoportmunka? Feszült. „Ki ette meg az utolsó joghurtot?” – extrán feszült.
-Az ok egyszerű: mindenki fáradt. Kevés az alvás, sok az értesítés, és mindenki siet valahová.
-Nem ellenünk van a világ, csak túl sok tab van nyitva mindenkinek az agyában.',
+    '<p><b>Feszült szituáció…</b></p> <p>Valamiért minden helyzet feszült. Sorban állás? Feszült. Csoportmunka? Feszült. „Ki ette meg az utolsó joghurtot?” [cite: 179, 214] – extrán feszült.</p> <p>Az ok egyszerű: mindenki fáradt. Kevés az alvás, sok az értesítés, és mindenki siet valahová, ahová amúgy nem is akar menni. [cite: 180, 215] Egy rossz pillantás, és már kész is a mini-drámák Netflix-szintű pilot epizódja.</p> <p>A baj nem az adott helyzet, hanem hogy mindenki már alapból 80%-os idegállapotban érkezik. [cite: 216] Innen pedig bármi lehet konfliktus: hangos sóhaj, rossz emoji, „ok.” [cite: 217] ponttal.</p> <p>Megoldás nincs, de segít, ha néha eszünkbe jut: nem ellenünk van a világ, csak túl sok tab van nyitva mindenkinek az agyában.</p> [cite: 181, 218]',
     1,
     1
 ),
 (
     '2026-01-27 20:45:00',
     'AI-házasság – mikor az algoritmus mondja, hogy „igen”',
-    '3ai.avif- Az emberiség eljutott oda, hogy valaki azt mondta: „Az emberek túl bonyolultak… házasodjunk inkább egy AI-hoz.”
-Az AI-partner mindig kedves, mindig figyel, és soha nem sértődik meg.
-Egy kapcsolat nem csak kényelmes, hanem néha idegesítő is – és pont ettől igazi.',
+    '<p><b>AI-házasság – mikor az algoritmus mondja, hogy „igen”</b></p> <p>Az emberiség eljutott oda, hogy valaki azt mondta: „Az emberek túl bonyolultak… házasodjunk inkább egy AI-hoz.” [cite: 181, 219] És meg is tette.</p> <p>Az AI-partner mindig kedves, mindig figyel, és soha nem kérdezi meg, hogy „mi a baj?” [cite: 181, 220] rossz hangsúllyal. Nem felejt el évfordulót, és nem sértődik meg – maximum lefagy.</p> <p>Romantikus? Kicsit. Furcsa? Nagyon. [cite: 221] De érthető: egy AI nem vitatkozik, nem késik, és nem lopja el a takarót. [cite: 222] A probléma ott kezdődik, hogy egy kapcsolat nem csak kényelmes, hanem néha idegesítő is. És pont ettől igazi. [cite: 181, 223] Egy algoritmus nem fog rád nézni úgy, hogy „most baj van”, csak frissít.</p> <p>Szóval AI-házasság: jó próbaüzem, de az emberi verzió még mindig több hibával, viszont több lélekkel fut.</p> [cite: 224]',
     2,
     1
 ),
 (
     '2025-11-14 17:03:00',
     'Focista autók… Mikor jönnek?',
-    '4autok.jpg- Ha egy focista megérkezik edzésre, nem azt kérdezed, hogy melyik poszton játszik, hanem hogy melyik autóval.
-Lamborghini, Ferrari, G-Wagon – mintha a parkoló lenne az igazi bajnokság.
-Addig marad a busz, a bicikli és az álmodozás.',
+    '<p><b>Focista autók… Mikor jönnek?</b></p> <p>Ha egy focista megérkezik edzésre, nem azt kérdezed, hogy „melyik poszton játszik?”, hanem hogy melyik autóval. [cite: 181, 225] Lamborghini, Ferrari, G-Wagon – mintha a parkoló lenne az igazi bajnokság.</p> <p>Ezek az autók nem csak gyorsak, hanem hangosak is. [cite: 182, 226] Fontos, hogy mindenki tudja: megérkezett. A közösségi médiában pedig több like jut egy kipufogóra, mint egy mesterhármasra.</p> <p>És mikor jön ez a hétköznapi embereknek? [cite: 227] Nos, lassan. A használtpiac már csöpögtet, az elektromos sportautók pedig csendben lopakodnak be az utcákra. [cite: 228] Addig marad a busz, a bicikli, és az álmodozás a piros lámpánál. De ki tudja? [cite: 182, 229] Lehet, hogy egyszer majd te is úgy parkolsz le, mint egy BL-döntős cserejátékos.</p> [cite: 230]',
     3,
     1
 ),
 (
     '2026-04-09 12:26:00',
     'Olimpiai feszültség: a Sasok edzője csalással vádolva',
-    '5sasok.jpg- Az olimpiai hangulat eleve feszült, de most a Sasok edzőjét csalással vádolják.
-A közösség kettészakadt, az internet mémeket gyárt, a bizonyítékok pedig még ködösek.
-Az igazság valószínűleg kevésbé drámai, de a reflektorfény most biztosan rajta van.',
+    '<p><b>Olimpiai feszültség: a Sasok edzője csalással vádolva</b></p> <p>Az olimpiai hangulat amúgy is feszült, de most sikerült még egy lapáttal rátenni: a Sasok edzőjét csalással vádolják. [cite: 182, 231] A hír gyorsabban terjedt, mint egy rosszul sikerült rajt utáni kifogás, és természetesen mindenki rögtön szakértő lett.</p> <p>A vád lényege egyelőre nem teljesen tiszta – ami csak tovább fokozza az izgalmakat. [cite: 182, 232] Egyesek szerint „túl jól” mentek a dolgok, mások gyanús jegyzetelést, furcsa mozdulatokat és „túl magabiztos pillantásokat” emlegetnek.</p> <p>Az edző természetesen tagad, és hangsúlyozza: a Sasok sikere kemény munkának, fegyelemnek és egy kis szerencsének köszönhető. [cite: 233] Meg persze edzéstervnek.</p> <p>A közösség kettészakadt. Vannak, akik szerint ez csak irigység, mások szerint „azért ez így kicsit sus”. [cite: 183, 234] Az internet már gyártja a mémeket, a kommentekben pedig többen már ítéletet is hirdettek – bizonyíték nélkül, de nagy lelkesedéssel.</p> <p>Az igazság valószínűleg kevésbé drámai, mint ahogy most tűnik. [cite: 183, 235] De egy biztos: az olimpia nem csak a sportolók küzdelméről szól, hanem arról is, ki bírja tovább idegekkel. [cite: 236] A Sasok edzője most mindenképp reflektorfénybe került.</p> [cite: 237]',
     1,
     1
 );
 
+-- Üzlet kategória (category_id: 3)
 INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-04-22 10:18:00',
     'Clash, mennyire is nemes? – szakértő válaszol',
-    '6clash.jpg- A Clash körül mindig ugyanaz a vita: stratégia vagy időrablás? A „szakértő” szerint mindkettő. Elméletben fejleszti az előretervezést, a reakcióidőt és a csapatmunkát. Gyakorlatban viszont inkább azt, hogyan lehet egy „utolsó támadást” még három utolsó támadássá bővíteni.
-A nemesség ott kezdődik, amikor nem borulsz ki egy elrontott raid után, és ott ér véget, amikor a telefonod töltőn van, te pedig még mindig klánchatelsz.
-A Clash nem rossz, csak veszélyesen hatékony abban, hogy elhitesse: most tényleg fontos dolgod van.',
+    '<p><b>Clash, mennyire is nemes? – szakértő válaszol</b></p> <p>A Clash körül mindig ugyanaz a vita: stratégia vagy időrablás? [cite: 184, 240] A „szakértő” szerint mindkettő. Elméletben fejleszti az előretervezést, a reakcióidőt és a csapatmunkát. [cite: 184, 241] Gyakorlatban viszont inkább azt, hogyan lehet egy „utolsó támadást” még három utolsó támadássá bővíteni.</p> <p>A nemesség ott kezdődik, amikor nem borulsz ki egy elrontott raid után, és ott ér véget, amikor a telefonod töltőn van, te pedig még mindig klánchatelsz. [cite: 184, 242] A Clash nem rossz, csak veszélyesen hatékony abban, hogy elhitesse: most tényleg fontos dolgod van. [cite: 185, 243] És ez már önmagában stratégiai teljesítmény.</p> [cite: 244]',
     1,
     3
 ),
 (
     '2025-08-07 16:41:00',
     'Vérdíj az alfa CEO fején',
-    '7alfa.jpg- A modern üzleti világban már nem kardok csapnak össze, hanem LinkedIn-üzenetek. Most pedig új szintre lépett a játék: vérdíj került egy „alfa” CEO fejére.
-A cégvezető magabiztos, karizmatikus, és trófeává vált a piacon. Extra fizetés, extra szabadság, extra ego – minden jár.
-Egy ponton túl azonban nem te irányítod a céget, hanem a rólad kialakított mítosz.',
+    '<p><b>Vérdíj a CEO fején</b></p> <p>A modern üzleti világban már nem kardok csapnak össze, hanem LinkedIn-üzenetek. [cite: 185, 245] Most pedig új szintre lépett a játék: vérdíj került egy „alfa” CEO fejére. [cite: 185, 246] Természetesen képletesen, bár a hangulat néha nem ezt sugallja.</p> <p>A szóban forgó cégvezető mindent visz: magabiztos, karizmatikus, és úgy lép be egy tárgyalóba, mintha az már eleve az övé lenne. [cite: 185, 247] Ez a befektetőknek tetszik, a konkurenciának pedig annyira, hogy már aktívan próbálják „levadászni”. [cite: 248] Extra fizetés, extra szabadság, extra ego – minden jár.</p> [cite: 186, 249] <p>Ez az eset jól mutatja, hogy a CEO-k ma már nem csak vezetők, hanem trófeák. [cite: 249] Minél „alfább” valaki, annál nagyobb körülötte a zaj. Kérdés, hogy meddig motiváció ez, és mikortól teher. [cite: 250] Mert egy ponton túl nem te irányítod a céget – hanem a rólad kialakított mítosz.</p> [cite: 186, 251]',
     3,
     3
 ),
 (
     '2026-02-15 11:09:00',
     'Állásinterjú trükkök',
-    '8allasinterju.jpg- Az állásinterjú nem hazugságverseny, inkább kreatív igazságelrendezés.
-„Szeretek csapatban dolgozni” – akkor is, ha legszívesebben egyedül lennél. „Terhelhető vagyok” – amíg van kávé.
-A legnagyobb trükk mégis az, hogy mindkét fél úgy tesz, mintha nem tudná: ez egy próbakör.',
+    '<p><b>Állásinterjú trükkök</b></p> <p>Az állásinterjú nem hazugságverseny, inkább kreatív igazságelrendezés. Mindenki tudja, mit kell mondani, csak azt nem, mikor kell elhinni. [cite: 186, 252]</p> <p>„Szeretek csapatban dolgozni” – akkor is, ha legszívesebben egyedül lennél. [cite: 186, 252] „Terhelhető vagyok” – amíg van kávé. A HR-es közben bólogat, jegyzetel, és próbálja eldönteni, hogy a mosoly valódi-e, vagy csak jól begyakorolt.</p> [cite: 186, 253] <p>A legnagyobb trükk mégis az, hogy mindkét fél úgy tesz, mintha nem tudná: ez egy próbakör. [cite: 186, 253] Ha sikerül eladnod magad, és ők is eladják az állást, akkor mindenki nyert. Legalább az első fizetésig.</p> [cite: 254]',
     3,
     3
 ),
 (
     '2026-06-03 13:54:00',
     'Montgomery teljes CSŐD!',
-    '9montgomer.jpg- A Montgomery neve sokáig egyet jelentett a stabilitással. Aztán ment. Egyenesen a csődbe.
-A háttérben túl gyors növekedés, rossz befektetések és az a hit állt, hogy ami eddig működött, az ezután is fog.
-A csőd nem robbanás volt, hanem lassú kifulladás. A tanulság egyszerű: nincs túl nagy cég a bukáshoz.',
+    '<p><b>Montgomery teljes CSŐD!</b></p> <p>A Montgomery neve sokáig egyet jelentett a stabilitással. [cite: 187, 255] Olyan cég volt, amire azt mondták: „na, ez nem megy sehová”. Aztán ment. [cite: 256] Egyenesen a csődbe.</p> [cite: 187, 257] <p>A hivatalos közlemények tele vannak szép szavakkal: gazdasági környezet, váratlan kihívások, piaci átrendeződés. [cite: 257] Ezek mind igazak, csak éppen nem magyaráznak meg mindent. A háttérben túl gyors növekedés, rossz befektetések és az a hit állt, hogy ami eddig működött, az ezután is fog.</p> [cite: 187, 258] <p>A probléma az volt, hogy senki nem akart rossz hírt vinni. [cite: 258] A figyelmeztető jelek megvoltak, csak mindig volt fontosabb megbeszélés. A dolgozók érezték, hogy valami nem stimmel, de „felül biztos tudják”. [cite: 259] A csőd végül nem robbanás volt, hanem lassú kifulladás. Egy reggel már nem működött tovább a történet. [cite: 187, 260] A tanulság egyszerű, mégis kellemetlen: nincs túl nagy cég a bukáshoz. És nincs olyan múlt, ami garantálná a jövőt.</p> [cite: 187, 261]',
     2,
     3
 );
+
+-- Vélemények kategória (category_id: 4)
 INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-02-11 08:40:00',
     'Matekóra – szükséges-e?',
-    '10matekora.png- A matekóra az a tantárgy, amit mindenki tanul, de kevesen vallják be, hogy valaha is szerették. A nagy kérdés mégis újra és újra felmerül: tényleg szükség van rá?
-nincs.',
+    '<p><b>Matekóra – szükséges-e?</b></p> <p>A matekóra az a tantárgy, amit mindenki tanul, de kevesen vallják be, hogy valaha is szerették. [cite: 188, 263] A nagy kérdés mégis újra és újra felmerül: tényleg szükség van rá?</p> [cite: 188, 264] <p>nincs.</p> [cite: 188, 264]',
     2,
     4
 ),
 (
     '2025-05-29 15:12:00',
     'Top 10 szleng',
-    '11t10szelng.png- A szleng olyan, mint a divat: gyorsan változik, és mindig ciki egy kicsit. Íme egy nem hivatalos top 10:
-1. Cringe – amikor fáj nézni
-2. Based – ritka, de üt
-3. NPC – amikor valaki csak létezik
-4. Flex – szerénykedve villogás
-5. POV – akkor is, ha nem az
-6. Bro – bárkire, bármikor
-7. Touch grass – finom beszólás
-8. Sus – gyanús, de elegánsan
-9. Main character – néha túl komolyan
-10. Oké, de… – vitaindító klasszikus
-Használni nem kötelező. De érteni? Ajánlott.',
+    '<p><b>Top 10 szleng</b></p> <p>A szleng olyan, mint a divat: gyorsan változik, és mindig ciki egy kicsit. [cite: 188, 265] Íme egy nem hivatalos top 10, kommentár nélkül… vagy mégis:</p> [cite: 188, 266] <p>1. <b>Cringe</b> – amikor fáj nézni [cite: 188, 266] 2. <b>Based</b> – ritka, de üt [cite: 189, 267] 3. <b>NPC</b> – amikor valaki csak létezik [cite: 189, 268] 4. <b>Flex</b> – szerénykedve villogás [cite: 189, 269] 5. <b>POV</b> – akkor is, ha nem az [cite: 189, 270] 6. <b>Bro</b> – bárkire, bármikor [cite: 189, 271] 7. <b>Touch grass</b> – finom beszólás [cite: 189, 272] 8. <b>Sus</b> – gyanús, de elegánsan [cite: 189, 273] 9. <b>Main character</b> – néha túl komolyan [cite: 189, 274] 10. <b>Oké, de…</b> – vitaindító klasszikus</p> [cite: 189, 275] <p>Használni nem kötelező. De érteni? Ajánlott.</p> [cite: 189, 275]',
     1,
     4
 ),
 (
     '2025-09-17 18:05:00',
     'Legviccesebb mémek – tudományosan megmagyarázva',
-    '12legvmeme.png- A legjobb mémek általában értelmetlenek. Egy kép, egy rossz betűtípus, és egy mondat, ami sehogy sem passzol. És mégis működik.
-Nevetünk rajtuk, mert felismerjük magunkat bennük. A mém a modern hieroglifa.
-Van az a pont, amikor már annyira rossz, hogy jó. Ez nem hiba. Ez a műfaj lényege.',
+    '<p><b>Legviccesebb mémek – tudományosan megmagyarázva</b></p> <p>A legjobb mémek általában értelmetlenek. [cite: 189, 276] Egy kép, egy rossz betűtípus, és egy mondat, ami sehogy sem passzol. [cite: 190, 277] És mégis működik.</p> [cite: 190, 278] <p>Nevetünk rajtuk, mert felismerjük magunkat bennük: halogatás, fáradtság, „ma már nem”. [cite: 191, 278] A mém a modern hieroglifa – egy pillantás, és mindent értesz.</p> [cite: 191, 279] <p>És igen, van az a pont, amikor már annyira rossz, hogy jó. [cite: 192, 279] Ez nem hiba. Ez a műfaj lényege.</p> [cite: 193, 280]',
     2,
     4
 ),
 (
     '2026-01-08 11:33:00',
     'Ezért szeresd a macsekokat',
-    '13eszermacs.png- A macskák nem próbálnak lenyűgözni. Nem akarnak megfelelni. Egyszerűen csak vannak – és ettől zseniálisak.
-Ők tanítanak meg arra, hogy nem kell mindig produktívnak lenni.
-Ha egyszer befogadnak, onnantól te alkalmazkodsz.',
+    '<p><b>Ezért szeresd a macsekokat</b></p> <p>A macskák nem próbálnak lenyűgözni. Nem akarnak megfelelni. [cite: 193, 281] Egyszerűen csak vannak – és pontosan ettől zseniálisak.</p> [cite: 193, 282] <p>Egy macska akkor kedves, amikor ő akarja. [cite: 282] Ha figyelmen kívül hagy, az nem személyes, csak… macskás. Ők tanítanak meg arra, hogy nem kell mindig produktívnak lenni. [cite: 193, 283] Néha elég feküdni és nézni a falat.</p> [cite: 284] <p>Ráadásul titokban uralják az internetet. [cite: 284] Ha rossz napod van, egy macskás videó mindig segít. Ez nem véletlen, hanem globális stratégia. Szeretni őket nem kötelező. [cite: 285] De ha egyszer befogadnak, onnantól te alkalmazkodsz.</p> [cite: 193, 286]',
     3,
     4
 ),
 (
     '2026-03-21 19:22:00',
     'Legjobb gyrosozó – objektív vélemény, teljesen szubjektíven',
-    '14gyros.png- A legjobb gyrosozó mindig az, amelyik nyitva van, amikor éhes vagy.
-Ha túlcsöpög: pluszpont.
-Ha a pultos ismer: nagyon jó jel.
-A legjobb gyros nem fine dining. Hanem életmentés.',
+    '<p><b>Legjobb gyrosozó – objektív vélemény, teljesen szubjektíven</b></p> <p>A legjobb gyrosozó mindig az, amelyik nyitva van, amikor éhes vagy. [cite: 193, 287] Fontos a hús, a szósz, de a hangulat dönt.</p> [cite: 288] <p>Ha túlcsöpög: pluszpont. Ha a pultos ismer: nagyon jó jel. [cite: 194, 288] Ha azt mondja „teszek még bele egy kicsit”: bajnok.</p> [cite: 289] <p>A legjobb gyros nem fine dining. Hanem életmentés.</p> [cite: 194, 289]',
     3,
     4
 ),
 (
     '2026-06-18 20:10:00',
     'BL elfér-e a világunkban?',
-    '15BLelfer.png- Bajnokok Ligája. Hetente többször megáll az élet miatta.
-A BL egyszerre sport, show és üzlet. Néha több a körítés, mint a játék.
-De amikor jön egy nagy meccs, mindenki nézi. Mert ez közös élmény.',
+    '<p><b>BL elfér-e a világunkban?</b></p> <p>Bajnokok Ligája. Hetente többször megáll az élet miatta. [cite: 194, 290] De vajon elfér-e ennyi foci a világunkban?</p> [cite: 291] <p>A BL egyszerre sport, show és globális esemény. [cite: 194, 291] Összeköt országokat, baráti társaságokat, és vitákat indít el, amik örökké tartanak. „Ez nem volt les.” [cite: 292] – dehogynem.</p> [cite: 293] <p>Közben viszont hatalmas üzlet is. Pénz, reklám, presztízs. Néha már több a körítés, mint a játék. [cite: 194, 293] De amikor jön egy nagy meccs, mindenki leül, és nézi. Akkor is, ha előtte szidta. Elfér? Igen. [cite: 294] Mert a BL nem csak foci. Közös élmény. És abból sosem árt, ha van még egy kicsi.</p> [cite: 194, 295]',
     3,
     4
 );
+
+-- Széchenyi kategória (category_id: 2)
 INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-03-05 09:25:00',
     'Terhes az iskola macskája?',
-    '16terhescica.png- Az iskola életében kevés dolog tud akkora hullámokat verni, mint egy pletyka. És amikor ez a pletyka az iskola macskájáról szól, ráadásul terhességgel kapcsolatban, akkor garantált a figyelem.
-Az elmúlt napokban egyre többen vették észre, hogy a macska „mintha kicsit kerekebb lenne”. A folyosói elemzések beindultak, és mindenki hirtelen állatorvos lett.
-A valóság? Egyelőre semmi sincs megerősítve. A macska nem nyilatkozik, viszont láthatóan élvezi a figyelmet.
-Egy biztos: ritkán látni ennyire békés témát, ami összehozza az iskolát.',
+    '<p><b>Terhes az iskola macskája?</b></p> <p>Az iskola életében kevés dolog tud akkora hullámokat verni, mint egy pletyka. [cite: 195, 298] És amikor ez a pletyka az iskola macskájáról szól, ráadásul terhességgel kapcsolatban, akkor garantált a figyelem.</p> [cite: 195, 299] <p>Az elmúlt napokban egyre többen vették észre, hogy a macska „mintha kicsit kerekebb lenne”. [cite: 195, 299] Innen pedig már csak egy lépés volt a következtetés. A folyosói elemzések beindultak, szakértők (értsd: diákok) mérlegeltek, fotók készültek, és mindenki hirtelen állatorvos lett.</p> [cite: 195, 300] <p>A valóság? [cite: 195, 300] Egyelőre semmi sincs megerősítve. Lehet, hogy vemhes. Lehet, hogy csak jól sikerült ebéd után látták. [cite: 195, 301] A macska mindenesetre nem nyilatkozik, és láthatóan élvezi a figyelmet.</p> [cite: 195, 302] <p>Egy biztos: ritkán látni ennyire békés témát, ami összehozza az iskolát. [cite: 195, 302] Amíg nem derül ki az igazság, marad a találgatás – és a remény, hogy ha lesznek kiscicák, az mindenkinek egy kicsit jobbá teszi a napját.</p> [cite: 303]',
     2,
     2
 ),
 (
     '2025-05-16 14:10:00',
     'Új kabala – mi is ez?',
-    '17ujkabala.png- Megérkezett. Megjelent. Néz ránk. Az új iskolai kabala itt van, és mindenki próbálja feldolgozni.
-Első reakciók vegyesek: „cuki”, „ez most komoly?”, de megszokni idő kell.
-Hogy ikon lesz-e vagy mém, az még kérdés. Addig is: mosolyogjunk rajta, és tegyünk úgy, mintha mindig is itt lett volna.',
+    '<p><b>Új kabala – mi is ez?</b></p> <p>Megérkezett. Megjelent. Néz ránk. [cite: 196, 304] Az új iskolai kabala itt van, és mindenki próbálja feldolgozni.</p> [cite: 196, 305] <p>Első reakciók vegyesek. [cite: 196, 305] Van, aki szerint „cuki”, mások szerint „ez most komoly?”, de egy dologban egyetértés van: megszokni idő kell. [cite: 196, 306] A kabala célja elvileg az összetartozás, a közösség erősítése – gyakorlatilag pedig az, hogy legyen mit rajzolni füzet szélére.</p> [cite: 307] <p>Hogy ikon lesz-e vagy mém, az még kérdés. [cite: 196, 307] De minden nagy kabala így kezdte. A történelem majd eldönti. [cite: 308] Addig is: nézzük, mosolyogjunk rajta, és tegyünk úgy, mintha mindig is itt lett volna.</p> [cite: 197, 309]',
     1,
     2
 ),
 (
     '2025-10-02 11:47:00',
     'Nyíltnap – amikor minden szép és mindenki kedves',
-    '18nyiltnap.png- Nyíltnapon az iskola egy alternatív univerzumba kerül. A falak tisztábbak, a tanárok mosolygósabbak, a diákok pedig példamutatóak.
-A leendő diákok nagy szemekkel néznek körbe, a jelenlegiek pedig próbálják eldönteni, mit mondjanak: az igazat vagy a marketing verziót.
-Ritka pillanat, de fontos: ilyenkor mindenki kicsit büszke arra, hogy ide tartozik.',
+    '<p><b>Nyíltnap – amikor minden szép és mindenki kedves</b></p> <p>Nyíltnapon az iskola egy alternatív univerzumba kerül. [cite: 197, 310] A falak tisztábbak, a tanárok mosolygósabbak, a diákok pedig példamutatóan viselkednek. [cite: 197, 311] Legalább pár óráig.</p> [cite: 312] <p>A leendő diákok nagy szemekkel néznek körbe, miközben próbálják elképzelni magukat itt. [cite: 197, 312] A jelenlegi diákok pedig próbálják eldönteni, mit mondjanak: az igazat vagy a „marketing verziót”.</p> [cite: 197, 313] <p>Az órák gördülékenyek, senki nem felejt el felszerelést, és a technika is működik. [cite: 313] Ritka pillanat. De fontos: ilyenkor mindenki kicsit büszke arra, hogy ide tartozik. [cite: 197, 314] És ez még a legszkeptikusabbakat is meg tudja lepni.</p> [cite: 315]',
     1,
     2
 ),
 (
     '2026-01-19 07:58:00',
     'Rendkívüli hóhelyzet',
-    '19rendho.png- Hó esett. Nem kicsit. Azonnal elindult a kérdés: lesz-e suli?
-A közösségi csoportok felrobbantak, mindenki frissítette az értesítéseket.
-A helyzet végül „rendkívüli” lett, de nem feltétlenül úgy, ahogy mindenki remélte. Viszont volt miről beszélni.',
+    '<p><b>Rendkívüli hóhelyzet</b></p> <p>Hó esett. Nem kicsit. Azonnal elindult a kérdés: lesz-e suli? [cite: 198, 316]</p> <p>A közösségi csoportok felrobbantak, az ablakoknál tömegek, mindenki frissítette az értesítéseket. [cite: 198, 316] Egyesek már hógolyót gyúrtak, mások mentálisan felkészültek a csalódásra.</p> [cite: 317] <p>Végül a helyzet „rendkívüli” lett, de nem feltétlenül úgy, ahogy mindenki remélte. [cite: 198, 317] A hó viszont megtette a hatását: legalább egy napig volt miről beszélni.</p> [cite: 198, 318]',
     3,
     2
 ),
 (
     '2026-04-27 16:36:00',
     'LOL (League of Legends) bajnokság – GG vagy EZ?',
-    '20lol.png- Iskolai LOL-bajnokság. Három szó, ami azonnal két táborra osztja a közösséget.
-A meccsek során volt clutch, rage ping és legendás visszatérés.
-A legjobb mégsem a győzelem volt, hanem az, hogy egy csomó ember egyszerre lelkesedett. A bajnokság bebizonyította: az e-sport közösséget épít.',
+    '<p><b>LOL (League of Legends) bajnokság – GG vagy EZ?</b></p> <p>Iskolai LOL-bajnokság. [cite: 198, 319] Három szó, ami azonnal két táborra osztja a közösséget: akik értik, és akik csak annyit kérdeznek, hogy „ez valami számítógépes dolog?”</p> [cite: 199, 320] <p>A verseny viszont komoly volt. [cite: 320] Csapatnevek, stratégiák, hirtelen megnövekedett „kézproblémák” és meglepően nagy szurkolás. A meccsek során volt minden: clutch pillanatok, rage pingek és legendás visszatérések.</p> [cite: 199, 321] <p>A legjobb az egészben mégsem a győzelem volt, hanem az, hogy egy csomó ember egyszerre lelkesedett ugyanazért. [cite: 200, 321] Tanárok néztek be, diákok magyaráztak, és egy rövid időre mindenki értette, mit jelent az, hogy „GG”.</p> [cite: 322] <p>A bajnokság bebizonyította: az e-sport igenis közösséget épít. [cite: 201, 322] És ha legközelebb is lesz, már senki nem kérdezi meg, hogy „ez miért számít?”. Mert láttuk. És számított.</p> [cite: 323]',
     2,
     2
 );
-INSERT INTO articles (date, title, text, writer_id, category_id) VALUES
+
+-- Szórakozás kategória (category_id: 5)
+INSERT INTO cikkek (date, title, text, writer_id, category_id) VALUES
 (
     '2025-04-01 17:20:00',
     'Székesfehérvár szórakozóhelyei',
-    '21szfvar.png- Székesfehérvár nem Budapest, de nem is egy unalmas vasárnap délután. A szórakozóhelyek kínálata olyan, mint egy vegyes tál: van benne minden, csak tudni kell, mikor hova érdemes menni.
-Vannak helyek, ahol a zene hangosabb, mint a gondolataid, és olyanok is, ahol inkább beszélgetni lehet.
-A közönség vegyes, a hangulat általában jó. Ha tudod, mit keresel, megtalálod. Ha nem, akkor is lesz belőle egy történet.',
+    '<p><b>Székesfehérvár szórakozóhelyei</b></p> <p>Székesfehérvár nem Budapest, de nem is egy unalmas vasárnap délután. [cite: 202, 325] A szórakozóhelyek kínálata olyan, mint egy vegyes tál: van benne minden, csak tudni kell, mikor hova érdemes menni.</p> [cite: 202, 326] <p>Vannak helyek, ahol a zene hangosabb, mint a gondolataid, és olyanok is, ahol inkább beszélgetni lehet – vagy legalább megpróbálni. [cite: 202, 326] Egyes helyek péntek este élnek igazán, mások inkább spontán „na, menjünk be” alapon működnek.</p> [cite: 327] <p>A közönség vegyes: diákok, fiatal felnőttek, és azok, akik már tíz éve is „csak egy italra ugrottak be”. [cite: 202, 327] A hangulat általában jó, még akkor is, ha a kabátmegőrző mindig rejtély marad.</p> [cite: 328] <p>Összességében: Fehérvár nem harsány, de megvan a maga stílusa. [cite: 328] Ha tudod, mit keresel, megtalálod. Ha nem, akkor is lesz belőle egy történet.</p> [cite: 202, 329]',
     2,
     5
 ),
 (
     '2025-07-12 14:48:00',
     'Mit lehet itt csinálni? – kérdezik a fiatalok',
-    '22mitlehet.png- Ez a kérdés szinte kötelezően elhangzik: „jó, de mit lehet itt csinálni?”.
-Van mozi, kávézók, parkok, edzőtermek és események – csak nem mindig akkor, amikor ráérnél.
-A város nem adja tálcán a szórakozást, inkább azt mondja: oldjátok meg. És ez néha működik.',
+    '<p><b>Mit lehet itt csinálni? – kérdezik a fiatalok</b></p> <p>Ez a kérdés szinte kötelezően elhangzik: „jó, de mit lehet itt csinálni?”. [cite: 203, 330] A válasz: több mindent, mint gondolnád, kevesebbet, mint szeretnéd.</p> [cite: 331] <p>Van mozi, kávézók, parkok, edzőtermek, események – csak nem mindig egyszerre, nem mindig akkor, amikor ráérnél. [cite: 203, 331] A kreatívabbak sétálnak, beszélgetnek, fotóznak, mások beülnek „csak egy kicsit”, amiből három óra lesz.</p> [cite: 332] <p>A város nem adja tálcán a szórakozást, inkább azt mondja: „oldjátok meg”. [cite: 203, 332] És furcsa módon ez néha működik. A legjobb programok sokszor nem helyhez kötöttek, hanem társasághoz.</p> [cite: 333]',
     1,
     5
 ),
 (
     '2026-02-03 18:06:00',
     'Ők lesznek az élőszereplős Aranyhaj főszereplői… vagy mégsem?',
-    '23arany.png- Az élőszereplős Aranyhaj castingja még nem végleges, de az internet már döntött.
-A rajongók szerint a karizma, az energia és a drámai hajlengés a legfontosabb.
-A viták hevesek, de amikor kijön a film, mindenki megnézi. A haj pedig biztosan főszereplő lesz.',
+    '<p><b>Ők lesznek az élőszereplős Aranyhaj főszereplői… vagy mégsem?</b></p> <p>Az élőszereplős Aranyhaj castingja hivatalosan még nem végleges, de az internet már döntött. [cite: 203, 334] A rajongók szerint mindenki tökéletes, aki szőke, tud énekelni, és legalább egyszer lóbált már valamit drámaian.</p> [cite: 335] <p>A találgatások szerint Aranyhaj karakterénél a legfontosabb a karizma és az energia – a haj hosszát megoldják. [cite: 204, 335] Flynn Rider esetében pedig kötelező a félmosoly és az „én most nem vagyok hős, de mégis” vibe.</p> [cite: 336] <p>A viták természetesen hevesek: „túl fiatal”, „túl ismert”, „nem elég rajzfilmes”. [cite: 205, 336] De ez már hagyomány. Amikor kijön a film, mindenki megnézi. Aztán újra vitatkozik. [cite: 205, 337] Egy biztos: akárki kapja a szerepet, a haj lesz a főszereplő. Minden más csak körítés.</p> [cite: 206, 338]',
     1,
     5
 ),
 (
     '2026-05-22 20:31:00',
     'Új Geometry Dash szintek – ujjak felkészülni',
-    '24geometri.png- Megjelentek az új Geometry Dash szintek, és ezzel együtt a kollektív idegösszeomlás is.
-Gyorsabbak, nehezebbek, villogóbbak. Az első próbálkozás reményteljes, a tizediknél már személyes ügy.
-De amikor végre sikerül… azért játszunk újra. GG.',
+    '<p><b>Új Geometry Dash szintek – ujjak felkészülni</b></p> <p>Megjelentek az új Geometry Dash szintek, és ezzel együtt a kollektív idegösszeomlás is. [cite: 206, 339] Gyorsabbak, nehezebbek, villogóbbak – pont, ahogy szeretjük (és utáljuk).</p> [cite: 340] <p>Az első próbálkozás mindig reményteljes. A másodiknál még optimista vagy. [cite: 206, 340] A tizediknél már személyes ügy. A játék továbbra is zseniálisan egyszerű: egy kocka, egy gomb, és végtelen frusztráció.</p> [cite: 341] <p>De amikor végre sikerül… na, azért játszunk vele újra és újra. [cite: 206, 341] GG.</p> [cite: 342]',
     2,
     5
 );
